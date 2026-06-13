@@ -50,9 +50,9 @@
 
 .nav-links a {
   font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 500;
-  color: #6a5a52;
+  font-size: 15px;
+  font-weight: 700; /* Bold as requested */
+  color: #3c2d24; /* Darker to match the bold look */
   transition: all 0.3s ease;
   padding: 8px 16px;
   border-radius: 20px;
@@ -111,49 +111,66 @@
 .hero-section {
   display: flex;
   min-height: 85vh;
-  background-color: var(--bg-secondary);
+  background-color: #f7f4ec; /* Exact cream match */
+  position: relative;
+  overflow: hidden;
+  align-items: center;
 }
 
 .hero-content {
-  flex: 1;
-  padding: 100px 80px;
+  flex: 0 0 55%;
+  max-width: 55%;
+  padding: 100px 80px 100px 120px; /* Push right to match placement and clear float buttons */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 2;
+  position: relative;
 }
 
 .hero-tagline {
-  color: var(--accent-gold);
-  font-size: 0.9rem;
+  color: #cba153;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 20px;
-  font-weight: 600;
+  margin-bottom: 25px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-family: var(--font-heading);
+  font-size: 4.5rem;
   line-height: 1.1;
-  margin-bottom: 30px;
-  color: var(--dark-brown);
+  margin-bottom: 25px;
+  color: #3c2d24;
 }
 
 .hero-description {
-  font-size: 1.1rem;
-  color: var(--text-light);
-  margin-bottom: 40px;
-  max-width: 500px;
+  font-size: 1.05rem;
+  color: #5a4a42;
+  margin-bottom: 15px;
+  max-width: 600px;
+  line-height: 1.6;
 }
 
 .hero-image {
-  flex: 1;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
 }
 
 .hero-image .placeholder-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 30%);
+  mask-image: linear-gradient(to right, transparent, black 30%);
 }
 
 /* Services Section */

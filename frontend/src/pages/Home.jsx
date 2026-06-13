@@ -21,14 +21,22 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-section" id="home">
         <div className="hero-content">
-          <p className="hero-tagline">Welcome to the epitome of elegance</p>
-          <h1 className="hero-title">Bridal & Designer Boutique in Bangalore</h1>
-          <p className="hero-description">
-            Discover exquisite bridal wear and custom designer outfits tailored to perfection. Experience the luxury of personalized fashion for your special day.
+          <p className="hero-tagline">
+            <span style={{ display: 'inline-block', width: '32px', height: '1.5px', backgroundColor: '#cba153', marginRight: '8px', verticalAlign: 'middle' }}></span>
+            TRUSTED BOUTIQUE · BANGALORE
           </p>
-          <div>
-            <button className="btn-primary">Book Appointment</button>
-            <button className="btn-outline" style={{ marginLeft: '15px' }}>Learn More</button>
+          <h1 className="hero-title">Bridal &amp; Designer Boutique<br/>in Bangalore</h1>
+          <p className="hero-description">
+            <span style={{ color: '#cba153', marginRight: '8px' }}>✦</span> Customized bridal blouses, designer outfits, and occasion wear with perfect fit, premium finishing, and personalized styling.
+          </p>
+          <p className="hero-subtext" style={{ fontSize: '0.9rem', fontStyle: 'italic', color: '#3c2d24', marginBottom: '40px', fontWeight: '500' }}>
+            <span style={{ color: '#cba153', marginRight: '8px' }}>✦</span> Designed personally by Chief Designer Shruthi Ajith
+          </p>
+          <div className="hero-buttons" style={{ display: 'flex', gap: '15px' }}>
+            <button className="btn-primary" style={{ backgroundColor: '#3c2d24', color: '#fff', padding: '14px 28px', borderRadius: '30px', fontWeight: 'bold', border: 'none', cursor: 'pointer' }}>Bridal Consultation</button>
+            <button className="btn-outline" style={{ backgroundColor: 'transparent', color: '#3c2d24', padding: '14px 28px', borderRadius: '30px', fontWeight: 'bold', border: '1px solid #3c2d24', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}>
+              <span className="phone-icon" style={{ fontSize: '1.1rem' }}>📞</span> Call Now
+            </button>
           </div>
         </div>
         <div className="hero-image">
