@@ -1,8 +1,8 @@
 import React from 'react';
 import heroImage from '../assets/hero-image.png';
-import img1 from '../assets/image-1.webp';
-import img2 from '../assets/image-2.webp';
-import img3 from '../assets/image-3.webp';
+import img1 from '../assets/1.png';
+import img2 from '../assets/13.png';
+import img3 from '../assets/10.png';
 import img4 from '../assets/image-4.webp';
 import img5 from '../assets/image-5.webp';
 import img6 from '../assets/image-6.webp';
@@ -12,39 +12,36 @@ import img9 from '../assets/image-9.webp';
 
 /* ─── Data (same structure as Shrusara) ─── */
 const SERVICES = [
-  { title: 'Bridal Blouse Designing',  desc: 'Custom necklines, perfect fitting & elegant finishing designed to complement your wedding saree.', img: img1, to: '/bridal' },
-  { title: 'Maggam & Aari Work',       desc: 'Premium handcrafted embroidery with rich detailing, creating a luxurious 3D finish for your bridal blouse.', img: img2, to: '/bridal' },
-  { title: 'Lehenga & Gowns',          desc: 'Elegant bridal lehengas and gowns designed with perfect structure, graceful flow and premium finishing.', img: img3, to: '/bridal' },
-  { title: 'Designer Dresses',         desc: 'Stylish outfits for receptions and special occasions, blending modern trends with boutique-level finishing.', img: img4, to: '/designer' },
-  { title: 'Indo-Western',             desc: 'Fusion outfits combine traditional craftsmanship with modern styles for a unique and elegant look.', img: img5, to: '/designer' },
-  { title: 'Ready to Wear Saree',      desc: 'Pre stitched ready-to-wear sarees crafted for effortless draping, perfect fit, and elegant styling.', img: img6, to: '/designer' },
+  { title: 'Bridal Collection', desc: 'Custom necklines, perfect fitting & elegant finishing designed to complement your wedding saree.', img: img1, to: '/bridal' },
+  { title: 'Designer Collection', desc: 'Premium handcrafted embroidery with rich detailing, creating a luxurious 3D finish for your bridal blouse.', img: img2, to: '/bridal' },
+  { title: 'Lehenga & Gowns', desc: 'Elegant bridal lehengas and gowns designed with perfect structure, graceful flow and premium finishing.', img: img3, to: '/bridal' },
 ];
 
 const WHY_CHOOSE = [
   { title: 'Perfect Customized Fitting for Every Body Type', icon: '✦' },
-  { title: 'Expert in Maggam & Aari Work Detailing',         icon: '✦' },
-  { title: 'Premium Stitching with Elegant Finishing',        icon: '✦' },
-  { title: 'Personalized Design Consultation',                icon: '✦' },
-  { title: 'Assured On-Time Delivery',                        icon: '✦' },
+  { title: 'Expert in Maggam & Aari Work Detailing', icon: '✦' },
+  { title: 'Premium Stitching with Elegant Finishing', icon: '✦' },
+  { title: 'Personalized Design Consultation', icon: '✦' },
+  { title: 'Assured On-Time Delivery', icon: '✦' },
 ];
 
 const ABOUT_CARDS = [
-  { title: 'Perfect Bridal Finishing',      desc: 'Necklines, fall, and detailing crafted to look flawless in person and in photos.' },
-  { title: 'Made-to-Measure Silhouettes',   desc: 'Every outfit is tailored to your body type, comfort, and occasion.' },
-  { title: 'Expert Maggam & Aari Work',     desc: 'Intricate hand embroidery with rich, premium detailing.' },
-  { title: 'Personalized Consultation',     desc: 'Clear design guidance tailored to your style and needs.' },
-  { title: 'On-Time Delivery Assurance',    desc: 'We respect your timeline and deliver as promised.' },
+  { title: 'Perfect Bridal Finishing', desc: 'Necklines, fall, and detailing crafted to look flawless in person and in photos.' },
+  { title: 'Made-to-Measure Silhouettes', desc: 'Every outfit is tailored to your body type, comfort, and occasion.' },
+  { title: 'Expert Maggam & Aari Work', desc: 'Intricate hand embroidery with rich, premium detailing.' },
+  { title: 'Personalized Consultation', desc: 'Clear design guidance tailored to your style and needs.' },
+  { title: 'On-Time Delivery Assurance', desc: 'We respect your timeline and deliver as promised.' },
 ];
 
 const REVIEWS = [
-  { name: 'Priya Sharma',         date: '2 weeks ago',  text: 'Absolutely stunning work! My bridal blouse was exactly what I dreamed of. The maggam work detail was breathtaking and the fit was perfect. Highly recommend!' },
-  { name: 'Divya Reddy',          date: '1 month ago',  text: 'I got my lehenga stitched here for my sister\'s wedding and I was blown away. The team is incredibly talented and the attention to detail is unmatched.' },
-  { name: 'Ananya Krishnamurthy', date: '3 weeks ago',  text: 'From the first consultation to the final fitting, the experience was seamless. My designer outfit drew so many compliments. Will definitely return!' },
+  { name: 'Priya Sharma', date: '2 weeks ago', text: 'Absolutely stunning work! My bridal blouse was exactly what I dreamed of. The maggam work detail was breathtaking and the fit was perfect. Highly recommend!' },
+  { name: 'Divya Reddy', date: '1 month ago', text: 'I got my lehenga stitched here for my sister\'s wedding and I was blown away. The team is incredibly talented and the attention to detail is unmatched.' },
+  { name: 'Ananya Krishnamurthy', date: '3 weeks ago', text: 'From the first consultation to the final fitting, the experience was seamless. My designer outfit drew so many compliments. Will definitely return!' },
 ];
 
-const PHONE   = '9741827558';
+const PHONE = '9741827558';
 const WA_TEXT = encodeURIComponent("Hi, I'm interested in customized bridal outfits. I would like to consult with Chief Designer Hinaaz.");
-const WA_URL  = `https://wa.me/${PHONE}?text=${WA_TEXT}`;
+const WA_URL = `https://wa.me/${PHONE}?text=${WA_TEXT}`;
 const TEL_URL = `tel:${PHONE}`;
 const GOOGLE_URL = 'https://www.google.com/search?q=Hinaaz+Fashion+Boutique+Hyderabad';
 
@@ -57,7 +54,7 @@ function ServiceCard({ service }) {
       </div>
       <div className="sf-service-body">
         <h3 className="sf-service-title">{service.title}</h3>
-        <p  className="sf-service-desc">{service.desc}</p>
+        <p className="sf-service-desc">{service.desc}</p>
         <div className="sf-service-actions">
           <span className="sf-btn-outline" style={{ width: '100%', textAlign: 'center' }}>View Designs</span>
         </div>
@@ -70,10 +67,10 @@ function ServiceCard({ service }) {
 function GoogleLogo({ size = 40 }) {
   return (
     <svg viewBox="0 0 48 48" width={size} height={size} aria-hidden="true">
-      <path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 7.9 3l5.7-5.7C34.2 6.5 29.4 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z"/>
-      <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 16 19.1 13 24 13c3.1 0 5.8 1.1 7.9 3l5.7-5.7C34.2 6.5 29.4 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
-      <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.3 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8H6.3C9.6 35.4 16.3 44 24 44z"/>
-      <path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.3 5.6l6.2 5.2C36.9 36.8 44 31 44 24c0-1.3-.1-2.6-.4-3.9z"/>
+      <path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 7.9 3l5.7-5.7C34.2 6.5 29.4 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z" />
+      <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 16 19.1 13 24 13c3.1 0 5.8 1.1 7.9 3l5.7-5.7C34.2 6.5 29.4 4 24 4 16.3 4 9.7 8.3 6.3 14.7z" />
+      <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.3 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8H6.3C9.6 35.4 16.3 44 24 44z" />
+      <path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.3 5.6l6.2 5.2C36.9 36.8 44 31 44 24c0-1.3-.1-2.6-.4-3.9z" />
     </svg>
   );
 }
@@ -82,7 +79,7 @@ function GoogleLogo({ size = 40 }) {
 function WAIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
     </svg>
   );
 }
@@ -91,7 +88,7 @@ function WAIcon() {
 function PhoneIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="17" height="17">
-      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
     </svg>
   );
 }
@@ -661,7 +658,7 @@ export default function Home() {
       {/* ══ HERO ══ */}
       <section className="sf-hero" id="home">
         <div className="sf-hero-text">
-          <p className="sf-hero-eyebrow">Trusted Boutique · Hyderabad</p>
+          <p className="sf-hero-eyebrow">Hinaaz Trusted Boutique · Hyderabad</p>
           <h1 className="sf-hero-h1">Bridal &amp; Designer Boutique in Hyderabad</h1>
           <p className="sf-hero-sub">
             <span className="sf-line">
@@ -806,7 +803,7 @@ export default function Home() {
               <span className="sf-score-num">4.9</span>
               <div className="sf-score-right">
                 <div className="sf-score-stars">
-                  {[1,2,3,4,5].map(n => <span key={n} className="sf-score-star">★</span>)}
+                  {[1, 2, 3, 4, 5].map(n => <span key={n} className="sf-score-star">★</span>)}
                 </div>
                 <span className="sf-score-label">Google Reviews</span>
               </div>
@@ -822,14 +819,14 @@ export default function Home() {
           <div className="sf-reviews-grid">
             <div className="sf-highlight-card">
               <div className="sf-highlight-stars">
-                {[1,2,3,4,5].map(n => <span key={n} className="sf-highlight-star">★</span>)}
+                {[1, 2, 3, 4, 5].map(n => <span key={n} className="sf-highlight-star">★</span>)}
               </div>
               <p className="sf-highlight-label">250+ Happy Clients in Hyderabad</p>
               <p className="sf-highlight-text">Loved by clients. Chosen for style.</p>
             </div>
             <div className="sf-reviews-cards-col">
               {REVIEWS.map((rv, i) => (
-                <div className="sf-review-card" key={i} id={`review-${i+1}`}>
+                <div className="sf-review-card" key={i} id={`review-${i + 1}`}>
                   <div className="sf-review-top">
                     <div className="sf-review-avatar">{rv.name.charAt(0)}</div>
                     <div>
@@ -838,7 +835,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="sf-review-stars">
-                    {[1,2,3,4,5].map(n => <span key={n} className="sf-review-star">★</span>)}
+                    {[1, 2, 3, 4, 5].map(n => <span key={n} className="sf-review-star">★</span>)}
                   </div>
                   <p className="sf-review-text">{rv.text}</p>
                 </div>
