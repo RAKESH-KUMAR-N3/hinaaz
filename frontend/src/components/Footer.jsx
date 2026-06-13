@@ -10,11 +10,11 @@ const Footer = () => {
           
           {/* Column 1 */}
           <div>
-            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: '#3c2d24', marginBottom: '15px' }}>Shrusara Fashion Boutique</h3>
+            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: '#3c2d24', marginBottom: '15px' }}>Hinaaz Fashion Boutique</h3>
             <p style={{ color: '#6a5a52', fontSize: '0.9rem', marginBottom: '20px', lineHeight: '1.6' }}>
               Bridal blouses, designer outfits, lehengas, gowns, and kids outfits tailored for premium fit, handcrafted detailing, and elegant occasion styling.
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'flex-start' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '10px', alignItems: 'center' }}>
               <button style={{ padding: '8px 20px', borderRadius: '30px', border: '1px solid #e5e0d8', backgroundColor: 'white', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontWeight: '500' }}>
                 <span style={{ fontSize: '1.2rem' }}>📞</span> Call Now
               </button>
@@ -47,10 +47,10 @@ const Footer = () => {
           <div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <li style={{ color: '#6a5a52', fontSize: '0.95rem', lineHeight: '1.5' }}>
-                Shrusara Fashion Boutique, 106, 6th Main Road, Mahalakshmipuram, Bangalore - 560086
+                Hinaaz Fashion Boutique, 106, 6th Main Road, Mahalakshmipuram, Bangalore - 560086
               </li>
               <li style={{ color: '#6a5a52', fontSize: '0.95rem' }}>9741827558</li>
-              <li style={{ color: '#6a5a52', fontSize: '0.95rem' }}>help@shrusara.com</li>
+              <li style={{ color: '#6a5a52', fontSize: '0.95rem' }}>help@hinaaz.com</li>
               <li><a href="#" style={{ color: '#6a5a52', textDecoration: 'none', fontSize: '0.95rem' }}>WhatsApp Us</a></li>
               <li><a href="#" style={{ color: '#6a5a52', textDecoration: 'none', fontSize: '0.95rem' }}>View on Google Maps</a></li>
             </ul>
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom" style={{ borderTop: '1px solid #e5e0d8', paddingTop: '20px', textAlign: 'center', color: '#8c7e73', fontSize: '0.85rem' }}>
-          <p>&copy; {new Date().getFullYear()} Shrusara Fashion Boutique. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Hinaaz Fashion Boutique. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

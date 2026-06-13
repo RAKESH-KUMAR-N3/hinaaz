@@ -581,3 +581,21 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Global: input placeholder color fix for dark backgrounds ── */
+input::placeholder {
+  color: rgba(229, 224, 216, 0.55);
+}
+
+/* Consultation form inputs on dark bg */
+.consultation-form-section input {
+  color: white !important;
+}
+
+/* ── Global: remove dark browser outline on focus ── */
+input:focus {
+  outline: none;
+  border-color: rgba(203, 161, 83, 0.7) !important;
+  box-shadow: 0 0 0 2px rgba(203, 161, 83, 0.15);
+}
+

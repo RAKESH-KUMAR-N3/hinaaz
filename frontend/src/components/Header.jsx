@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <nav className="navbar">
       <div className="nav-logo">
-        <img src={logo} alt="Shrusara Logo" className="logo-img" />
+        <img src={logo} alt="Hinaaz Logo" className="logo-img" />
       </div>
       <div className="nav-links">
         <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink>
