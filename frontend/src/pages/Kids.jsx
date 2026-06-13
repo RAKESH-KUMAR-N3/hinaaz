@@ -1,5 +1,7 @@
 import React from 'react';
-import '../App.css';
+import './Kids.css';
+
+// Using provided local assets to simulate the kids gallery
 import img1 from '../assets/image-1.webp';
 import img2 from '../assets/image-2.webp';
 import img3 from '../assets/image-3.webp';
@@ -8,88 +10,125 @@ import img5 from '../assets/image-5.webp';
 import img6 from '../assets/image-6.webp';
 
 const Kids = () => {
-  const collectionImages = [img1, img2, img3, img4, img5, img6];
+  
+  const gallery = [
+    { id: 1, src: img1, alt: 'Mommy & Me Princess Set' },
+    { id: 2, src: img2, alt: 'Bluebell Kids Party Dress' },
+    { id: 3, src: img3, alt: 'Little Princess Lehenga' },
+    { id: 4, src: img4, alt: 'Mother Daughter Heritage Set' },
+    { id: 5, src: img5, alt: 'Little Royal Festive Lehenga' },
+    { id: 6, src: img6, alt: 'Sparkle Bloom Party Gown' },
+  ];
 
   return (
-    <div className="kids-page">
-      {/* Hero Section */}
-      <section className="category-hero" style={{ padding: '60px 0', backgroundColor: '#fcfbf8' }}>
-        <div className="container" style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ flex: '1' }}>
-            <p className="hero-tagline">KIDS OUTFITS • BANGALORE</p>
-            <h1 className="hero-title">Kids Outfits in Bangalore Designed for Comfort & Celebration</h1>
-            <p className="hero-description">
+    <div className="kids-clone-page">
+      
+      {/* 1. Hero Section */}
+      <section className="kd-hero-wrapper">
+        <div className="kd-hero-content">
+          <div className="kd-hero-text">
+            <p className="kd-eyebrow">Kids Outfits · Hyderabad</p>
+            <h1 className="kd-hero-h1">
+              Kids Outfits in Hyderabad
+              <span>Designed for Comfort & Celebration</span>
+            </h1>
+            <p className="kd-sub-flex">
               Customized kids outfits designed with comfort, premium fabrics, and perfect finishing for special occasions.
             </p>
-            <div style={{ marginTop: '20px' }}>
-              <button className="btn-primary" style={{ marginRight: '15px' }}>Order on WhatsApp</button>
-              <button className="btn-outline">Call Now</button>
-            </div>
-          </div>
-          <div style={{ flex: '1', display: 'flex', justifyContent: 'center' }}>
-            <div style={{ width: '300px', height: '300px', borderRadius: '50%', backgroundColor: '#f4efea', position: 'relative' }}>
-              {/* This represents the spiral shape in the kids.png image */}
+            <div className="kd-hero-btns">
+              <a href="#" className="kd-btn-pri">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                </svg>
+                Order on WhatsApp
+              </a>
+              <a href="#" className="kd-btn-sec">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                Call Now
+              </a>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* What we design for kids */}
-      <section style={{ padding: '40px 0', backgroundColor: '#fcfbf8' }}>
-        <div className="container">
-          <p className="hero-tagline" style={{ color: '#cba153', marginBottom: '10px' }}>— WHAT WE DESIGN</p>
-          <h2 className="section-title">What We Design for Kids</h2>
-          <p className="service-desc">Every piece is crafted keeping your child's comfort and the occasion in mind.</p>
+        <div className="kd-hero-image-container">
+          <img src={img3} alt="Kids Outfits Hyderabad" />
+          <div className="kd-hero-fade"></div>
         </div>
       </section>
 
-      {/* Kids Outfit Collection */}
-      <section className="category-collections" style={{ backgroundColor: '#e5e0d8', padding: '60px 0' }}>
-        <div className="container">
-          <p className="hero-tagline" style={{ color: '#cba153', marginBottom: '10px' }}>— GALLERY</p>
-          <h2 className="section-title">Kids Outfit Collection</h2>
-          <p className="service-desc" style={{ marginBottom: '40px' }}>A mix of custom-designed and ready boutique styles for kids.</p>
+      {/* 2. What We Design (Empty white section based on screenshot) */}
+      <section className="kd-white-section">
+        <div className="kd-container" style={{ padding: 0 }}>
+          <p className="kd-sec-eyebrow">What We Design</p>
+          <h2 className="kd-sec-h2">What We Design for Kids</h2>
+          <p className="kd-sec-sub">Every piece is crafted keeping your child's comfort and the occasion in mind.</p>
+        </div>
+      </section>
+
+      {/* 3. Collection Gallery */}
+      <section className="kd-gallery-section">
+        <div className="kd-container" style={{ padding: 0 }}>
+          <p className="kd-sec-eyebrow">Gallery</p>
+          <h2 className="kd-sec-h2">Kids Outfit Collection</h2>
+          <p className="kd-sec-sub">A mix of custom designed and ready boutique styles for kids.</p>
           
-          <div className="gallery-grid">
-            {collectionImages.map((img, index) => (
-              <div key={index} className="gallery-item">
-                <img src={img} alt={`Kids ${index}`} className="placeholder-image" style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px'}} />
+          <div className="kd-gallery-grid">
+            {gallery.map(item => (
+              <div key={item.id} className="kd-gallery-card">
+                <div className="kd-gallery-img-wrap">
+                  <img src={item.src} alt={item.alt} className="kd-gallery-img" />
+                </div>
               </div>
             ))}
           </div>
+          <p className="kd-gallery-note">Showing our latest kids outfits · Updated regularly with new work</p>
         </div>
       </section>
 
-      {/* Consultation Form */}
-      <section className="consultation-form-section" style={{ padding: '80px 0', backgroundColor: '#fcfbf8' }}>
-        <div className="container">
-          <div style={{ backgroundColor: '#3f2f25', borderRadius: '16px', padding: '40px', color: 'white' }}>
-            <p style={{ textAlign: 'center', letterSpacing: '2px', fontSize: '0.8rem', marginBottom: '20px', color: '#cba153' }}>— CONSULTATION —</p>
-            <h3 style={{ textAlign: 'center', fontSize: '1.2rem', marginBottom: '30px' }}>Share age, occasion, preferred colors and design ideas to get started.</h3>
-            
-            <form style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
-              <div style={{ flex: '1', minWidth: '200px' }}>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '8px', letterSpacing: '1px' }}>AGE</label>
-                <input type="text" placeholder="e.g. 4 years" style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #5c4e46', backgroundColor: '#4a382d', color: 'white' }} />
+      {/* 4. Trust Line Banner */}
+      <section className="kd-trust-shell">
+        <div className="kd-trust-line">
+          <span className="kd-trust-icon">✦</span>
+          <p className="kd-trust-text">
+            Every outfit is designed keeping comfort, movement and occasion styling in mind.
+          </p>
+          <span className="kd-trust-icon">✦</span>
+        </div>
+      </section>
+
+      {/* 5. Consultation Form Section */}
+      <section className="kd-form-section">
+        <div className="kd-cta-wrap">
+          <p className="kd-cta-eyebrow">Consultation</p>
+          <h2 className="kd-cta-h">Order Customized Kids Outfits on WhatsApp</h2>
+          <p className="kd-cta-sub">Share age, occasion, preferred colors and design ideas to get started.</p>
+          
+          <div className="kd-cta-form">
+            <div className="kd-form-fields">
+              <div className="kd-form-group">
+                <label className="kd-form-label">Age</label>
+                <input type="text" className="kd-form-input" placeholder="e.g. 5 Years" />
               </div>
-              <div style={{ flex: '1', minWidth: '200px' }}>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '8px', letterSpacing: '1px' }}>OCCASION</label>
-                <input type="text" placeholder="e.g. Birthday, Wedding" style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #5c4e46', backgroundColor: '#4a382d', color: 'white' }} />
+              <div className="kd-form-group">
+                <label className="kd-form-label">Occasion</label>
+                <input type="text" className="kd-form-input" placeholder="e.g. Birthday, Wedding" />
               </div>
-              <div style={{ flex: '1', minWidth: '200px' }}>
-                <label style={{ display: 'block', fontSize: '0.8rem', marginBottom: '8px', letterSpacing: '1px' }}>PREFERRED COLORS / DESIGN</label>
-                <input type="text" placeholder="e.g. Pastel pink, floral" style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #5c4e46', backgroundColor: '#4a382d', color: 'white' }} />
+              <div className="kd-form-group">
+                <label className="kd-form-label">Preferred colors / design</label>
+                <input type="text" className="kd-form-input" placeholder="e.g. Pink dress, floral" />
               </div>
-            </form>
-            
-            <div style={{ textAlign: 'center', marginTop: '30px' }}>
-              <button className="btn-gold" style={{ marginRight: '15px', backgroundColor: '#cba153', color: '#3f2f25', fontWeight: 'bold' }}>WhatsApp Order</button>
-              <button className="btn-outline" style={{ color: 'white', borderColor: 'white' }}>Call Now</button>
             </div>
-            <p style={{ textAlign: 'center', fontSize: '0.8rem', marginTop: '20px', color: '#a39c94' }}>Your details will be kept confidential. We will reach out to you.</p>
+            
+            <div className="kd-cta-btns">
+              <a href="#" className="kd-btn-gold">WhatsApp Order</a>
+              <a href="#" className="kd-btn-outline-white">Call Now</a>
+            </div>
+            <p className="kd-form-hint">Your details will be pre-filled in WhatsApp — just hit send.</p>
           </div>
         </div>
       </section>
+      
     </div>
   );
 };

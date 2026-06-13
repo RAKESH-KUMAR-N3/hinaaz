@@ -4,8 +4,8 @@ import '../App.css';
 
 const Footer = () => {
   return (
-    <footer className="footer" id="contact" style={{ backgroundColor: '#fcfbf8', padding: '60px 0 20px', borderTop: '1px solid #e5e0d8' }}>
-      <div className="container">
+    <footer className="footer" id="contact" style={{ backgroundColor: '#fcfbf8', padding: '80px 0 60px', borderTop: '1px solid #e5e0d8' }}>
+      <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
         <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1.5fr', gap: '30px', marginBottom: '40px' }}>
           
           {/* Column 1 */}
@@ -14,14 +14,6 @@ const Footer = () => {
             <p style={{ color: '#6a5a52', fontSize: '0.9rem', marginBottom: '20px', lineHeight: '1.6' }}>
               Bridal blouses, designer outfits, lehengas, gowns, and kids outfits tailored for premium fit, handcrafted detailing, and elegant occasion styling.
             </p>
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '10px', alignItems: 'center' }}>
-              <button style={{ padding: '8px 20px', borderRadius: '30px', border: '1px solid #e5e0d8', backgroundColor: 'white', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontWeight: '500' }}>
-                <span style={{ fontSize: '1.2rem' }}>📞</span> Call Now
-              </button>
-              <button style={{ padding: '8px 20px', borderRadius: '30px', border: 'none', backgroundColor: '#25D366', color: 'white', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontWeight: '500' }}>
-                <span style={{ fontSize: '1.2rem' }}>💬</span> WhatsApp
-              </button>
-            </div>
           </div>
           
           {/* Column 2 */}
@@ -47,7 +39,7 @@ const Footer = () => {
           <div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <li style={{ color: '#6a5a52', fontSize: '0.95rem', lineHeight: '1.5' }}>
-                Hinaaz Fashion Boutique, 106, 6th Main Road, Mahalakshmipuram, Bangalore - 560086
+                Hinaaz Fashion Boutique, 106, 6th Main Road, Mahalakshmipuram, Hyderabad - 500001
               </li>
               <li style={{ color: '#6a5a52', fontSize: '0.95rem' }}>9741827558</li>
               <li style={{ color: '#6a5a52', fontSize: '0.95rem' }}>help@hinaaz.com</li>
